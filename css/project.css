@@ -1,0 +1,111 @@
+  
+     /* Allgemeine Stilregeln */
+     body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(10 , 10, 10);
+      color: white;
+      background-image: url(../img/Anna.jpg);
+      background-size: cover;
+
+      background-repeat: no-repeat;
+
+    }
+
+    /* Header-Stil */
+    header {
+      background-color: rgb(10 , 10, 10);
+      color: #fff;
+      padding: 2em;
+      text-align: center;
+    }
+
+    a{
+      font-size: 12px;
+      color: white;
+      text-decoration: none;
+      margin: 0.5em;
+    }
+
+    a:hover{
+      color: #ff6a0e;
+    }
+
+    a.projectt {
+      font-size: 12px;
+      color: #ff6a0e;
+      text-decoration: none;
+      margin: 0.5em;
+    }
+
+    a.projectt:hover {
+      color: white;
+    } 
+
+    .menu { 
+      float: center;
+    }
+  
+    .logo {
+      width:70%;
+      height: auto;
+    }
+
+    p {
+      margin-right: 10em;
+    }
+
+    .textleft {
+      margin-right: 4em;
+      margin-left: 2em;
+      margin-top: 2em;
+    }
+
+    .textright {
+      margin-left: 2em;
+      margin-right: 2em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+     /* Projekte-Container-Stil */
+     .project-container {
+       display: flex;
+       flex-wrap: wrap;
+       margin-top: 40px;
+       justify-content: space-between;
+     }
+ 
+     /* Projekt-Stil */
+     .project {
+       background-color:  rgb(10 , 10, 10);
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+       width: 25%;
+       flex-direction: row;
+       align-items: flex-start;
+       display: flex;
+       justify-content: center;
+       text-align: justify;
+       margin-left: 10em;
+     }
+
+     .project img {
+       width: 100%;
+       height: auto;
+     }
+ 
+     img.titelimg {
+       width: 100%;
+       height: auto;
+     }
+
+     footer {
+      padding: 2em;
+    }
+
+    .footertxt {
+      text-align: center;
+      color: white;
+      font-size: 10px
+    }
+
