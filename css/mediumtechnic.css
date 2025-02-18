@@ -6,7 +6,6 @@
         padding: 0;
         background-color: rgb(10 , 10, 10);
         color: white;
-        background-image: url(../img/Installation6.jpg);
         background-size: cover;
       }
   
@@ -114,12 +113,14 @@
        .projectbig img {
         width: 60%;
         height: auto;
-        
       }
    
        .project img {
          width: 100%;
          height: auto;
+         margin-top: 2em;
+         margin-left: 5em;
+         margin-right: 5em;
        }
    
        img.titelimg {

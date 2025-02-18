@@ -11,32 +11,35 @@
         <a href="../index.html"><img class="logo" src="../img/logo_transparent.png" alt=""></a>
           <div class="dropdown">
             <div class="menu">
-              <a href="project.html">PROJECT</a>
-              <a href="context.html">CONTEXT</a>
-              <a href="mediumtechnic.html">TECHNICAL BACKGROUND</a>
-              <!-- <a href="./html/future.html">WEITERENTWICKLUG</a> -->
-              <a href="team.html">TEAM</a>
-              <a href="#video">TEASER</a>
+                <a href="project.html">PROJECT</a>
+                <a href="context.html">CONTEXT</a>
+                <a href="team.html">TEAM</a>
+                <a href="mediumtechnic.html">TECHNICAL BACKGROUND</a>
+                <!-- <a href="./html/future.html">WEITERENTWICKLUG</a> -->
+                <a href="touchdesigner.html">TOUCHDESIGNER</a>
             </div>
           </div>
         </header>
     <main>
         <div class="project-container">
+            <div class="project">
+                <p class="textleft">
+                    The <b>technical setup</b> of Shining Souls follows a structured process that enables <b>real-time interaction</b> and <b>immersive visuals</b>. Before implementing the full system, we first conducted testing with a prototype to ensure the functionality of our setup. In this initial phase, we did not yet use the Kinect sensor. Instead, we simulated movement by tracking the mouse cursor on the screen.<br><br>
+                    In the <b>first step</b>, we tested whether a single person's movement could be successfully tracked within the already built TouchDesigner system. By simply moving the mouse, we verified how well the visual elements reacted to positional changes. In the <b>second step</b>, we introduced an additional layer of complexity by simulating a second person in the system. To achieve this, we used both the <b>normal mouse movement</b> and an <b>inverted mouse movement</b> — one representing an individual’s real motion and the other acting as a mirrored counterpart. This allowed us to simulate two interacting users before integrating the Kinect.<br><br>
+                    Once we confirmed that the system worked as expected with the prototype, we proceeded with the <b>Kinect sensor</b>, which enabled real-time tracking of actual people in the room. The Kinect detects and tracks visitors, capturing their position and movement in real time. This data is transmitted as <b>CHOP (Channel Operators) data</b> to <b>TouchDesigner</b>, where it is further processed. <br><br>
+                  </p>
+            </div>
+            <div class="project">
+                <img class="" src="../img/TechnicalBackground.png" alt="">
+            </div>
+            <div class="project">
+                <img class="" src="../img/project01.jpg" alt="">
+            </div>
         <div class="project">
-            <p class="textleft">
-                In der nebenstehenden Grafik sind unser technisches System und die jeweiligen Interaktionen der Komponenten aufgezeigt. <br><br>
-                Um eine einwandfreie Datenübertragung zu gewähren müssen sich der PC und die Fitbit im selben Netzwerk befinden. Über den Computer wird der lokale Python Server aufgesetzt und gehostet. Dieser fragt die Herzrate über die Heartrate-App der Fitbit ab und gibt diese dann live an Max/MSP weiter. <br><br>
-                <b>Max/MSP</b> ist eine visuelle Programmierumgebung für die Erstellung von komplexer interaktiver Kunst, Musik, Videos und Performances. Innerhalb von Max erzeugen wir durch grafische Patches und Skripte generative Musik anhand der Serverdaten.                 
-                Die numerischen Daten des Servers werden in Max/MSP als sich live ändernde bpm in das generative Patch integriert und steuern so das Tempo und die generative Melodie. <br> <br>
-                Die nun erzeugten Audiosignale des generativen Patches werden von Max/MSP an TouchDesigner weitergegeben und als Grundlage der generativen grafischen Darstellung eingebunden. <br> <br>
-                <b>TouchDesigner</b> ist eine professionelle Software für visuelle Effekte, 3D-Grafiken und Interaktive Medien. Die generative, grafische Darstellung reagiert mit Bewegungsimpulsen auf die Kicks, sowie Farbverändernde Impulse auf die Snares.
-                So entsteht am Ende ein audiovisuelles Zusammenspiel der Daten, welches wir über einen Beamer und Audio System im Raum ausgeben.</p>
-        </div>
-        <div class="project">
-            <img class="" src="../img/Technik_groß.jpg" alt="">
-        </div>
-        <div class="projectbig">
-            <img class="" src="../img/MAX.PNG" alt="">
+            <p class="textright">
+                In <b>TouchDesigner</b>, the system extracts and analyzes the incoming CHOP data, translating the detected movement into a dynamic particle system. As people move, their positions and interactions influence the particles, visually representing their presence in the space. The intensity and behavior of these particles adapt based on proximity and movement, reinforcing the concept of connection and interaction. <br><br>
+                Once the data has been processed, the <b>visual output</b> is sent to a <b>beamer</b>. The projector displays the particle system and live tracking information onto the ceiling, creating an engaging and ever-changing visual experience. This projection dynamically responds to users’ actions, making their presence an integral part of the installation. Through this interplay of <b>motion tracking, real-time data processing, and immersive projection</b>, <b><i>Shining Souls</i></b> transforms an ordinary space into an interactive environment that visually reflects human connection and interaction.
+            </p>
         </div>
         </div>
         <div class="projectbig">

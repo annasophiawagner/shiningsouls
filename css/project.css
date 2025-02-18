@@ -58,13 +58,13 @@
     .textleft {
       margin-right: 4em;
       margin-left: 2em;
-      margin-top: 2em;
+      margin-top: 1em;
     }
 
     .textright {
       margin-left: 2em;
       margin-right: 2em;
-      margin-top: 2em;
+      margin-top: 1em;
       margin-bottom: 2em;
     }
      /* Projekte-Container-Stil */
@@ -82,15 +82,10 @@
        width: 25%;
        flex-direction: row;
        align-items: flex-start;
-       display: flex;
+       display: grid;
        justify-content: center;
        text-align: justify;
        margin-left: 10em;
-     }
-
-     .project img {
-       width: 100%;
-       height: auto;
      }
  
      img.titelimg {
@@ -107,4 +102,5 @@
       color: white;
       font-size: 10px
     }
+
 

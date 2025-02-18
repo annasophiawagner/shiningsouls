@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Interaktive Installationen Portfolio</title>
+    <link rel="stylesheet" href="../css/touchdesigner.css">
+  </head>
+  <body>
+      <header>
+        <a href="../index.html"><img class="logo" src="../img/logo_transparent.png" alt=""></a>
+          <div class="dropdown">
+            <div class="menu">
+              <a href="project.html">PROJECT</a>
+              <a href="context.html">CONTEXT</a>
+              <a href="team.html">TEAM</a>
+              <a href="mediumtechnic.html">TECHNICAL BACKGROUND</a>
+              <!-- <a href="./html/future.html">WEITERENTWICKLUG</a> -->
+              <a href="touchdesigner.html">TOUCHDESIGNER</a>
+            </div>
+          </div>
+        </header>
+    <main>
+        <div class="project-container">
+            <div class="project">
+                <p class="textleft">
+                    <b>TOUCHDESIGNER DEEP DIVE</b> <br><br>
+                  The system for <i>Shining Souls</i> was developed step by step, starting with an initial prototype test before integrating the Kinect camera. In the <b>first image</b> we can see the testing phase, we used mouse control instead of Kinect to verify the basic functionality of tracking and particle reactions. Initially, we tested how simple mouse movement could simulate a single person and influence the particle system. In the next step, we added an inverted mouse movement to simulate a second person. This allowed us to analyze how the system reacted when two people approached or moved away from each other. This early testing phase ensured that the particle system responded correctly before implementing the more complex Kinect tracking.<br><br>
+                  Once the mouse tracking worked as expected, we integrated the Kinect camera into the system. The Kinect detects people entering the room and tracks their position as 2D coordinates. We processed this position data in TouchDesigner, where it was stored as CHOP data and used for visualization. Each detected person was assigned a glowing light circle that followed their movements. When two people came closer, their circles started to overlap, visually representing their interaction. <br><br>
+                  A core part of the project was the particle system, which we designed to be highly dynamic and responsive. We used a particle generator to create a cloud of moving light particles that reacted to the tracked positions. These particles symbolized the “souls” of the visitors and changed behavior based on proximity and distance. We implemented attraction, repulsion, and fusion principles: as two people moved closer, their light circles merged, and the glow intensified. When they moved apart, the light particles dispersed again, creating a poetic visualization of human connection.
+                </p>
+            </div>
+            <div class="project">
+                <p class="textright">
+                    To refine the visual output, we applied various masking and filtering techniques. A dynamic mask helped emphasize key areas of the particle system and ensured smooth transitions between states. We also adjusted the transparency and brightness of the particles so that the intensity of the glow would change naturally as the visitors moved. When two circles overlapped, the effect became stronger, reinforcing the idea of growing connection through light. <br><br>
+                    Finally, we processed the visual output in real-time and projected it onto a surface. In the post-processing phase, we fine-tuned the display with effects such as blur, color correction, and soft transitions to create a seamless and aesthetically pleasing projection. A beamer then projected the final result onto the ceiling or a wall, allowing visitors to move freely within the space and interact with the floating light particles. <br><br>
+                    By combining interactive tracking, particle simulation, and real-time projection, we created an installation that allows visitors to see their own presence in the room in a new way. The initial testing phase with mouse control helped us validate the core mechanics before introducing Kinect tracking. From there, we refined the interaction, optimized the visuals, and brought the entire system to life through projection. Shining Souls became an artistic and immersive expression of human connection, captured through light and movement.
+                </p>
+            </div>
+            <div class="projectbig">
+                <img src="../img/TOUCHDESIGNER_MouseSystem.PNG" alt="">
+            </div>
+        <div class="project">
+            <p class="textleft">
+                In the <b>second image</b>, we see the final system that now integrates the Kinect for motion tracking. This system functions in the same way as our initial prototype, which was based on mouse movement. The key difference is that instead of using mouse movement as an input, we now process real-world movement data from the Kinect sensor.
+            </p>
+        </div>
+        <div class="project">
+            <p class="textright">
+                The Kinect Operator extracts the x and y tracking positions of Person 1 and Person 2 in real time. These coordinates are then fed into the TouchDesigner system, where they replace the previous mouse-based tracking data. The extracted positional data is processed similarly, influencing the particle system dynamically based on the detected movement. The rest of the system — particle behavior, interaction logic, and projection output — remains unchanged. This transition from a mouse-based prototype to Kinect-based tracking marks the final step in making the installation fully interactive and responsive to real-world human movement.
+            </p>
+        </div>
+        <div class="projectbig">
+            <img src="../img/TOUCHDESIGNER_KinectSystem.PNG" alt="">
+        </div>
+      </div>
+    </main>
+    </main>
+  </body>
+</html>
